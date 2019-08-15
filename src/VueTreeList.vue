@@ -33,7 +33,7 @@
         </span>
 
         <div class="vtl-node-content" v-if="!editable">
-          {{model.name}}
+          {{model.title}}
         </div>
         <input v-else class="vtl-input" type="text" ref="nodeInput" :value="model.name" @input="updateName" @blur="setUnEditable">
         <div class="vtl-operation" v-show="isHover">
