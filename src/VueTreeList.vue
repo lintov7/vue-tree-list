@@ -243,7 +243,9 @@
         this.isDragEnterNode = false
       },
       drop(e) {
+        console.log('drop')
         if (!compInOperation) return
+        console.log(e);
         const oldParent = compInOperation.model.parent;
         compInOperation.model.moveInto(this.model)
         this.isDragEnterNode = false
